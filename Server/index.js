@@ -21,15 +21,15 @@ const maxVideoSize = 100 * 1000 * 1000
 
 let mySQLConfig  = {
   connectionLimit: 10,
-  host: 'cis557project.c2bhx62b2pud.us-east-1.rds.amazonaws.com',
+  host: 'hostname',
   user: 'admin',
-  password: 'password321321',
-  database: 'messaging_app'
+  password: 'password',
+  database:'db'
 }
 
 const s3 = new aws.S3({
-  accessKeyId: 'AKIAWDZRM2MFUPW6Q3WJ',
-  secretAccessKey: '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'
+  accessKeyId: 'key',
+  secretAccessKey: 'key'
 })
 
 const webapp = express();
@@ -1074,11 +1074,11 @@ webapp.get('/getActivityFeed', async(req,res)=>{
 webapp.post('/obtainTwilioToken', (req, res) => {
   const user = req.body.username
   // put your Twilio API credentials here
-  const accountSid = 'AC36b4a1de8a0d4f9fb11bfec91527fe4f';
-  const authToken = '537e1a7e77cbcb6ff2d3ea4d9b293960';
+  const accountSid = 'key';
+  const authToken = 'key';
 
   // put your Twilio Application Sid here
-  const appSid = 'APcefcf3617c37c85664baa8d658fd7c6d';
+  const appSid = 'key';
 
   const capability = new ClientCapability({
     accountSid: accountSid,
@@ -1099,9 +1099,9 @@ webapp.post('/obtainTwilioToken', (req, res) => {
 
 
 webapp.post("/voice", (req, res) => {
-  const To = req.body.To || '+12676247797';
+  const To = req.body.To || '+123456789';
   const response = new VoiceResponse();
-  const dial = response.dial({ callerId: '+18648062463' });
+  const dial = response.dial({ callerId: '+18648062467' });
   dial.client(To);
   res.set("Content-Type", "text/xml");
   res.send(response.toString());
@@ -1110,7 +1110,7 @@ webapp.post("/voice", (req, res) => {
 //TWILIO NEED TO FILL IN THE RIGHT VALUE HERE
 webapp.post("/voice/incoming", (req, res) => {
   const response = new VoiceResponse();
-  const dial = response.dial({ callerId: '+18648062463', answerOnBridge: true });
+  const dial = response.dial({ callerId: '+18648062467', answerOnBridge: true });
   // ?? Probably this is where we need to pipe in the right value
   dial.client("helloMindy"); // ?? Need to be dynamic
   res.set("Content-Type", "text/xml");
