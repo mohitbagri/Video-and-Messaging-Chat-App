@@ -1,0 +1,181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActivityFeed.js test snapshot test 1`] = `
+<div>
+  <h1>
+    Activity Feed View
+  </h1>
+  <h4>
+    View Your Friends' Statuses
+  </h4>
+  <form>
+    <button
+      onClick={[Function]}
+    >
+      Click to load statuses
+    </button>
+  </form>
+</div>
+`;
+
+exports[`ChangePassword.js test snapshot test 1`] = `
+<div>
+  <h2>
+    change password page 
+  </h2>
+  <div
+    className="form-group"
+  >
+    <label>
+      Security Question 
+    </label>
+    <input
+      className="form-control"
+      id="security"
+      placeholder=" Enter Security Question"
+      type="security"
+    />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label>
+      New Password
+    </label>
+    <input
+      className="form-control"
+      onChange={[Function]}
+      placeholder="Password"
+      type="password"
+      value=""
+    />
+  </div>
+  <button
+    onClick={[Function]}
+  >
+    Click me!
+  </button>
+</div>
+`;
+
+exports[`Chat.js test snapshot test 1`] = `
+<div
+  className="previewComponent"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      className="fileInput"
+      onChange={[Function]}
+      type="file"
+    />
+    <button
+      className="submitButton"
+      onClick={[Function]}
+      type="submit"
+    >
+      Upload Multimedia file
+    </button>
+  </form>
+  <div
+    className="imgPreview"
+  >
+    <div
+      className="previewText"
+    >
+      Please select the file for Preview
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DeactivateAccount.js test snapshot test 1`] = `
+<div>
+  <h2>
+    activate/deactivate account
+  </h2>
+  <button
+    onClick={[Function]}
+  >
+    Click me!
+  </button>
+</div>
+`;
+
+exports[`Home.js test snapshot test 1`] = `
+<div>
+  <h2>
+    HELLO
+  </h2>
+  <img
+    alt="fireSpot"
+    height="200px"
+    src="fb_default.jpg"
+    width="200px"
+  />
+</div>
+`;
+
+exports[`Incoming.js test snapshot test 1`] = `
+Array [
+  <button
+    onClick={[Function]}
+  >
+    Accept
+  </button>,
+  <button
+    onClick={[Function]}
+  >
+    Reject
+  </button>,
+]
+`;
+
+exports[`Login.js test snapshot test 1`] = `<Login />`;
+
+exports[`Main.js test snapshot test 1`] = `<Main />`;
+
+exports[`MainView.js test snapshot test 1`] = `<MainView />`;
+
+exports[`OnCall.js test snapshot test 1`] = `
+<div
+  className="call"
+>
+  <div
+    className="hang-up"
+  >
+    <button
+      color="red"
+    >
+      Hang up
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Phone.js test snapshot test 1`] = `
+Array [
+  <div
+    className="call"
+  >
+    <button
+      color="green"
+      onClick={[Function]}
+    >
+      Call Test
+    </button>
+  </div>,
+  <p
+    className="status"
+  >
+    Connecting
+  </p>,
+]
+`;
+
+exports[`PostStatus.js test snapshot test 1`] = `<UNDEFINED />`;
+
+exports[`UserSignUp.js test snapshot test 1`] = `<UserSignUp />`;
+
+exports[`twilioStates.js test snapshot test 1`] = `<states />`;

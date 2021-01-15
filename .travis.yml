@@ -1,0 +1,13 @@
+sudo: required
+language: node_js
+install:
+  - nvm install node
+  - node -v
+  - cd server
+  - npm i -g yarn
+  - npm install express
+  - yarn
+  - npm install --save-dev jest
+  - npm install --save-dev @babel/plugin-transform-modules-commonjs
+script:
+  - yarn test --coverage
